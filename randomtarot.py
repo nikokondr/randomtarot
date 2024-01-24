@@ -5,7 +5,7 @@ import random
 import platform
 import os
 
-os.chdir(os.path.expanduser('~/randomtarot'))
+os.chdir(os.getcwd())
 
 i = random.randint(1,78)
 
@@ -19,4 +19,3 @@ if platform.system() == 'Darwin':
     os.system('open '+thefile)
 elif platform.system() == 'Linux':
     os.system('display '+thefile)
-
